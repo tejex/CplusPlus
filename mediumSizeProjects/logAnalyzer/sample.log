@@ -1,0 +1,33 @@
+2026-10-13 09:00:00 | INFO | Application started
+2026-10-13 09:00:01 | INFO | Configuration loaded
+2026-10-13 09:00:02 | INFO | Connecting to database
+2026-10-13 09:00:03 | INFO | Database connection established
+2026-10-13 09:00:04 | WARNING | Cache is almost full
+2026-10-13 09:00:05 | INFO | User alice logged in
+2026-10-13 09:00:06 | INFO | Request received for account 1042
+2026-10-13 09:00:07 | ERROR | Database query timed out
+2026-10-13 09:00:08 | WARNING | Retrying database query
+2026-10-13 09:00:09 | INFO | Database query completed
+This line is malformed
+2026-10-13 09:00:10 | INFO | Report generation started
+2026-10-13 09:00:11 | WARNING | Report contains incomplete records
+2026-10-13 09:00:12 | INFO | Report saved to output.txt
+2026-10-13 09:00:13 | ERROR | Failed to open settings.txt
+2026-10-13 09:00:14 | WARNING | Using default settings
+2026-10-13 09:00:15 | INFO | User bob logged in
+2026-10-13 09:00:16 | INFO | File upload started
+2026-10-13 09:00:17 | ERROR | File upload failed
+2026-10-13 09:00:18 | WARNING | Network response is slow
+2026-10-13 09:00:19 | INFO | File upload retry started
+2026-10-13 09:00:20 | ERROR
+2026-10-13 09:00:21 | INFO | File upload completed
+2026-10-13 09:00:22 | ERROR | Invalid password for user alice
+2026-10-13 09:00:23 | WARNING | Multiple failed login attempts detected
+2026-10-13 09:00:24 | INFO | User alice logged out
+2026-10-13 09:00:25 | INFO | Scheduled backup started
+2026-10-13 09:00:26 | ERROR | Backup destination is unavailable
+2026-10-13 09:00:27 | WARNING | Backup postponed
+2026-10-13 09:00:28 | INFO | User bob logged out
+2026-10-13 09:00:29 | INFO | Database connection closed
+2026-10-13 09:00:30 | INFO | Application stopped
+2026-10-13 09:00:31 | | Log level is missing
