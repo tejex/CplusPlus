@@ -1,0 +1,5 @@
+[INFO] Database connection opened
+[WARN] Query execution took longer than expected
+[ERROR] Transaction failed
+[ERROR] Backup failed
+[INFO] Database connection closed

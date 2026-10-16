@@ -1,0 +1,5 @@
+[INFO] Worker started
+[WARN] Job queue almost full
+[DEBUG] Task 42 selected
+[ERROR] Task 42 failed
+[INFO] Worker stopped

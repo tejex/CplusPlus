@@ -1,0 +1,5 @@
+[INFO] Application started
+[INFO] Configuration loaded
+[WARN] Memory usage above 80%
+[ERROR] Failed to connect to payment service
+[INFO] Application stopped
