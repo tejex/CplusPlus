@@ -5,5 +5,8 @@
 #include<vector>
 #include<filesystem>
 
-void countCategories();
+
+namespace fs = std::filesystem;
+
+void countCategories(const fs::path& filePath);
 int countAllLines();

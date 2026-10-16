@@ -52,6 +52,8 @@ void countCategories(const fs::path& filePath) {
     for(string line : fileLines){
         cout << line << endl;
     }
+
+
     return;
 }
 

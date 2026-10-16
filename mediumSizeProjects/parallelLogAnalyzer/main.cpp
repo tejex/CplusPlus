@@ -4,6 +4,8 @@
 #include "parallel.h"
 #include "parallel.cpp"
 #include <filesystem>
+#include<thread>
+
 
 using namespace std;
 
@@ -68,14 +70,33 @@ int main(){
 
     if(parallel){
         //conduct parallel processing on the log files here
+        //open multiple threads here and have them execute the count categories
+        //function.
+        vector<thread> workers;
+        //how can I close out the thread, or do thread.join...
+        //would it be okay to do it right after calling the function? then whats 
+        //the point? wanted to open three threads or x threads on the loop, then 
+        //close them out, not open -> thread.join() each time, 
         for (const auto& entry : fs::directory_iterator(targetDirectory)) {
             if(fs::is_regular_file(entry.path())){
-                countCategories(entry.path());
+                workers.emplace_back(countCategories, entry.path());
             }
         }
+        
+        for(auto& worker: workers){
+            worker.join();
+        }
     }
-    else{
+    if(!parallel){
+        cout << "Here " << endl;
         //conduct sequential processing on the log files here
+
+        //Here we dont start any threads, instead we just call the function 
+        //directly but for every file the directory we are exploring has.
+         for (const auto& entry : fs::directory_iterator(targetDirectory)){
+            countCategories(entry.path());
+         }
+
     }
 
 }
