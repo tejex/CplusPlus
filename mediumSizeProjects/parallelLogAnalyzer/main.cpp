@@ -88,14 +88,13 @@ int main(){
         }
     }
     if(!parallel){
-        cout << "Here " << endl;
         //conduct sequential processing on the log files here
 
         //Here we dont start any threads, instead we just call the function 
         //directly but for every file the directory we are exploring has.
-         for (const auto& entry : fs::directory_iterator(targetDirectory)){
+        for (const auto& entry : fs::directory_iterator(targetDirectory)){
             countCategories(entry.path());
-         }
+        }
 
     }
 
